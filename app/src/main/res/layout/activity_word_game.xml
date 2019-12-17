@@ -50,7 +50,6 @@
             android:focusable="false"
             android:gravity="center"
             android:padding="3dp"
-            android:text="text"
             android:textAllCaps="true"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -62,6 +61,12 @@
         android:layout_height="match_parent"
         android:layout_weight="3.4"
         android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rVChars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
 
         <LinearLayout
             android:id="@+id/btnlayout"

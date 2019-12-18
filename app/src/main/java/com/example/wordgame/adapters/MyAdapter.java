@@ -42,6 +42,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.WordHolder> {
             public void onClick(View v) {
                 String setWord = editTextWord.getText().toString() + characterList[position];
                 editTextWord.setText(setWord);
+                holder.textView.setTextColor(context.getResources().getColor(R.color.colorBack));
+                holder.textView.setBackgroundColor(context.getResources().getColor(R.color.colorBack));
                 holder.textView.setOnClickListener(null);
             }
         });
